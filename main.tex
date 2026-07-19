@@ -1,0 +1,148 @@
+\documentclass{chicv}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{hologo}
+\usepackage{fontawesome5}
+\usepackage{relsize}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\renewcommand{\baselinestretch}{1.2}
+\setlength{\parskip}{0.3em}
+\setlength{\parindent}{0pt}
+\usepackage[normalem]{ulem}
+
+\renewcommand{\ULthickness}{0.7pt}
+\renewcommand{\ULdepth}{0.7ex}
+\begin{document}
+
+\name{Yikai Tang}
+\begin{basicinfo}
+\info{\faHome\,\href{https://wintermelooooo.github.io/}{\uline{Homepage}}\!\!\!\!\!\!\!}
+\info{\email{wintermelooooo@gmail.com}}
+\info{\github{WinterMelooooo}[https://github.com/WinterMelooooo]}
+\end{basicinfo}
+\definecolor{darkgray}{RGB}{90,90,90}
+%================= EDUCATION ======================
+\section*{Education}
+
+\textbf{Shanghai Jiao Tong University (SJTU)} \hfill \textit{Sep 2022 -- Present} \\
+Advisor: \textbf{Prof.\ Yunbo Wang} \hfill B.E. in Computer Science and Technology (IEEE Honor Class)
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item \textbf{GPA: 3.8}
+    \item \textbf{27} A/A+ Courses: Design and Analysis of Algorithms,Operating System,Discrete Mathematics, etc.
+    \item GRE: V160, Q168; TOEFL: 110
+\end{itemize}
+
+\textbf{University of California, Berkeley} \hfill \textit{Jan 2025 -- May 2025} \\
+Advisor: \textbf{Prof.\ Jitendra Malik} \hfill Visiting Student, BGA Program 
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item CS 184: Foundations of Computer Graphics — \textbf{A}
+    \item CS 61A: Structure and Interpretation of Computer Programs — \textbf{A}
+    \item EECS 126: Probability and Random Processes — \textbf{A-}
+\end{itemize}
+%================= Berkeley RESEARCH ======================
+\section*{Publications}
+% VGDP
+\textbf{\large DIPOLE} \hfill \textit{BAIR, UC Berkeley \ | \ Mar 2025 -- Sep 2025} \\
+\textit{\fontsize{9.5pt}{12pt}\selectfont Fusing Vision and Geometry for Robust
+Visuomotor Generalization} \\
+\textit{\textit{\textbf{Y. Tang*}}, {\color{darkgray} H. Geng*}, {\color{darkgray} J. Jia}, {\color{darkgray} Y. Hu}, {\color{darkgray} S. Zang}, 
+{\color{darkgray} J. Yang}, {\color{darkgray} P. Abbeel}, {\color{darkgray} J. Malik}}
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item Proposed a \textbf{modality-aware dropout mechanism} enabling robust RGB–point-cloud fusion within diffusion policies.
+    \item Built a unified visual–geometric latent space that improves generalization across lighting, materials, viewpoints, and object configurations.
+    \item Demonstrated strong, robust, state-of-the-art performance through geometry-informed policy learning.
+\end{itemize}
+
+
+% ISF-VLA
+\textbf{\large ISF-VLA} \hfill \textbf{IROS 2026 (Accepted)}\ \textit{\ | \ BAIR, UC Berkeley \ | \ Sep 2025 -- Nov 2025} \\
+\textit{\fontsize{9.5pt}{12pt}\selectfont An Implicit 3D Vision-Language-Action Model Capitalizing on 3D-Aware Vision Foundation Models through Implicit Spatial Fusion} \\
+\textit{{\color{darkgray} S. Zang}*, {\color{darkgray} S. Wei}*, {\color{darkgray} H. Geng}, \textit{\textbf{Y. Tang}}, 
+{\color{darkgray} B. An}, {\color{darkgray} S. Jayavelu}, {\color{darkgray} P. Abbeel}, {\color{darkgray} J. Malik}}
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item Introduced \textbf{implicit 3D spatial fusion} to integrate geometric cues into RGB–point-cloud fusion \textbf{for VLA}.
+    \item Achieved significant gains in cross-scene and cross-viewpoint robustness through 3D-grounded multimodal representation learning.
+    \item Enabled stable and expressive fusion for large pretrained visual–language backbones in manipulation.
+\end{itemize}
+% RoST3R
+\textbf{\large RoST3R} \hfill \textit{BAIR, UC Berkeley \ | \ Mar 2025 -- Sep 2025} \\
+\textit{\fontsize{9.5pt}{12pt}\selectfont Robot-Aware Dynamic 3D Reconstruction from RGB Input for Robotic Manipulation} \\
+\textit{{\color{darkgray} Y. Han}, {\color{darkgray} H. Geng}, {\color{darkgray} J. Zhang}, 
+{\color{darkgray} Z. Chen}, \textit{\textbf{Y. Tang}}, {\color{darkgray} C. Cheng}, 
+{\color{darkgray} P. Li}, {\color{darkgray} T. Darrell}, {\color{darkgray} P. Abbeel}, 
+{\color{darkgray} J. Malik}, {\color{darkgray} Y. Wang}}
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item Developed a dynamic, metric-scale 3D reconstruction pipeline from monocular RGB tailored for robotic manipulation.
+    \item Enabled consistent 3D scene understanding with temporally stable geometry beneficial for downstream control.
+    \item Delivered robot-aware reconstruction that integrates motion cues for improved dynamic-scene fidelity.
+\end{itemize}
+
+
+%================= RESEARCH EXPERIENCE ======================
+\section*{Research Experience}
+
+\textbf{BAIR, UC Berkeley} \hfill \textit{Mar 2025 -- Nov 2025} \\
+Advisor: \textbf{Prof.\ Jitendra Malik}
+
+{\leftskip=1.5em
+\textbf{DIPOLE$^{\ast}$} — Multimodal diffusion policy with modality-aware fusion \hfill \textit{Mar 2025 -- Sep 2025} \par
+\textbf{RoST3R} — Robot-aware dynamic 3D reconstruction from RGB \hfill \textit{Mar 2025 -- Sep 2025} \par
+\textbf{ISF-VLA} — Implicit 3D spatial fusion for VLA models \hfill \textit{Sep 2025 -- Nov 2025} \par
+}
+
+\textbf{Yunbo Lab, SJTU} \hfill \textit{Oct 2023 -- Dec 2024} \\
+Advisor: \textbf{Prof.\ Yunbo Wang} 
+
+{\leftskip=1.5em
+\textbf{DeformSDF$^{\ast}$} — Physics-aware SDF reconstruction for highly deformable objects \hfill \textit{Aug 2024 -- Dec 2024} \par
+\textbf{Intuitive Physics Fluids} — Multi-view real-world fluid reconstruction \hfill \textit{Oct 2023 -- Jul 2024} \par
+}
+
+{\footnotesize $^{\ast}$First / Co-First Author}
+%================= PROJECTS ======================
+\section*{Projects}
+
+\textbf{Game Design with olcPixelGameEngine} \hfill \textit{Jun 2023 -- Jul 2023} \\
+Advisor: Yuting Wang \hfill \textit{Tech: C++}
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item Designed and implemented an SLG game with custom UI and unit systems.
+    \item Implemented pixel-level visual effects for movement, attacks, and explosions.
+\end{itemize}
+
+\textbf{News Crawler and Search Engine} \hfill \textit{Dec 2023 -- Jan 2024} \\
+Advisor: Ya Zhang \hfill \textit{Tech: Flask, BeautifulSoup, Lucene, Face\_Recognition}
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item Built a multithreaded crawler collecting 10k+ news articles and images.
+    \item Implemented a Lucene-based search backend with a Flask web interface.
+\end{itemize}
+
+\textbf{Structured Macro Support for WhileDB} \hfill \textit{Dec 2024 -- Jan 2025} \\
+Advisor: Qinxiang Cao \hfill \textit{Tech: Flex, Bison, C\#} 
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item Extended WhileDB with structured macros and function calls while preserving AST integrity.
+\end{itemize}
+
+%================= HONORS ======================
+\section*{Honors and Awards}
+SJTU Merit Scholarship for Academic Excellence (Category C) — 2023 \\
+Class Student Leader in Academics — 2022
+
+%================= Professional Service ==================
+\section*{Professional Service}
+Workshop Organizer: \textbf{[NeurIPS 2026]}
+\href{https://embodied-world-models.github.io/#assistance}{Embodied World Models for Decision Making\ {\scalebox{0.6}{\faExternalLink*}}}
+
+
+
+%================= ACTIVITIES ======================
+\section*{Leadership and Activities}
+Debate Team, SJTU — Competed in 30+ tournaments; mentored 20+ members.
+
+%================= SKILLS ======================
+\section*{Technical Skills}
+Python, C++, Coq; PyTorch, ROS2, Transformers, Open3D; Linux, Git
+
+\end{document}
